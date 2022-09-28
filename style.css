@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+a {
+  color: #fff;
+}
+
+li,
+a,
+button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5% 10px 10%;
+}
+.menu {
+  display: flex;
+}
+.ref {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.navigation li {
+  float: left;
+  display: inline;
+  padding: 10px 20px 20px 0;
+}
+
+.navigation :hover {
+  color: aquamarine;
+}
+
+/* Introduction Section */
+
+#Introduction {
+  /* display: flex; */
+  background-image: url("port.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.Intro-Name {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 10%;
+}
+.links ul {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+.links ul li {
+  list-style: none;
+  margin: 0 12%;
+}
+
+.links ul li .yo {
+  font-size: 30px;
+  transition: 0.6s;
+}
+.links ul li .yo:hover {
+  transform: translate(0, -10px);
+}
+
+.links ul li:nth-child(2) .yo:hover {
+  color: #1da1f2;
+}
+.links ul li:nth-child(3) .yo:hover {
+  color: #fb3958;
+}
+.links ul li:nth-child(4) .yo:hover {
+  color: #fbbc05;
+}
+
+.yo {
+  padding-top: 10%;
+  padding-left: 5%;
+}
+.yo:hover {
+  color: black;
+}

@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+body {
+  margin: 0;
+  text-align: center;
+}
+
 h1,
 h2,
 h3,
@@ -29,6 +34,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 5% 10px 10%;
+}
+hr {
+  border: dotted black 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
 }
 .menu {
   display: flex;
@@ -67,8 +78,8 @@ ul {
 }
 .links ul {
   position: absolute;
-  top: 50%;
-  left: 45%;
+  margin-top: 5%;
+  margin-left: 45%;
   transform: translate(-50%, -50%);
   display: flex;
 }
@@ -101,4 +112,77 @@ ul {
 }
 .yo:hover {
   color: black;
+}
+
+@media (max-width: 700px) {
+  #Introduction {
+    background-image: none;
+    background-color: #181919;
+  }
+
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav,
+  ul,
+  li {
+    display: block;
+  }
+  .Intro-Name {
+    font-size: 2rem;
+    margin: 5%auto;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  .navigation li {
+    padding: 10px 20px 20px 0;
+  }
+  .links ul {
+    margin-left: 40%;
+  }
+}
+
+/* ABOUT ME SECTION */
+
+#About-Me {
+  padding-top: 5%;
+}
+
+.About-Name {
+  font-size: 4rem;
+  color: #181919;
+}
+.About-Subtitle {
+  font-size: 1rem;
+  color: #353737;
+}
+
+.about-container {
+  display: flex;
+}
+.About-Image {
+  height: 370px;
+  width: 370px;
+  border-radius: 10%;
+  margin: 5% 5% 2% 20%;
+}
+.About-Data {
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 5% 10% 2% 5%;
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .About-Image {
+    margin: 5% auto;
+  }
+  .About-Data {
+    text-align: center;
+  }
 }

@@ -54,7 +54,6 @@ ul {
 
 .navigation li {
   float: left;
-  display: inline;
   padding: 10px 20px 20px 0;
 }
 
@@ -70,6 +69,10 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .Intro-Name {
   font-size: 3rem;
@@ -185,4 +188,21 @@ ul {
   .About-Data {
     text-align: center;
   }
+}
+
+/* Skill Section */
+
+.skill-row {
+  margin: 5% auto;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.items {
+  height: 150px;
+  width: 250px;
+  margin: 10px;
+  background-color: #353737;
 }

@@ -59,6 +59,7 @@ ul {
 
 .navigation :hover {
   color: aquamarine;
+  transition: width 2s, height 4s;
 }
 
 /* Introduction Section */
@@ -194,15 +195,39 @@ ul {
 
 .skill-row {
   margin: 5% auto;
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-.items {
-  height: 150px;
-  width: 250px;
-  margin: 10px;
-  background-color: #353737;
+.ho {
+  cursor: pointer;
+  transition: 0.6s;
 }
+.ho:hover {
+  transform: translate(0, -10px);
+}
+.ho1:hover {
+  color: #e34c26;
+}
+.ho2:hover {
+  color: #2965f1;
+}
+.ho3:hover {
+  color: #f0db4f;
+}
+.ho4:hover {
+  color: #563d7c;
+}
+.items {
+  margin: 10px;
+  font-size: 10rem;
+}
+@media (max-width: 500px) {
+  .items {
+    height: 200px;
+    width: 250px;
+  }
+}
+
+/* Project Section */

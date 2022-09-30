@@ -5,6 +5,7 @@
 }
 
 body {
+  background-color: #f2f2f2;
   margin: 0;
   text-align: center;
 }
@@ -266,14 +267,14 @@ ul {
   margin-top: 15%;
   color: #181919;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: #f2f2f2;
   border: 2px solid black;
   font-family: "Oswald", sans-serif;
   transition: 00.6s;
 }
 
 .Project-btn:hover {
-  color: #fff;
+  color: #f2f2f2;
   background-color: #2c2d2d;
 }
 
@@ -295,15 +296,19 @@ ul {
     flex-direction: column-reverse;
   }
   .Project-Image {
-    height: 250px;
+    width: 370px;
     margin: 5% auto;
   }
+  .project-heading {
+    font-size: 2rem;
+  }
   .project-data {
-    margin: auto;
+    font-size: 1rem;
+    margin: auto 5%;
     text-align: center;
   }
   .Project-Image2 {
-    height: 250px;
+    width: 370px;
     margin: 5% auto;
   }
 }

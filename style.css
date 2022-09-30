@@ -32,43 +32,63 @@ button {
   text-decoration: none;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 5% 10px 10%;
-}
 hr {
   border: dotted black 6px;
   border-bottom: none;
   width: 4%;
   margin: 100px auto;
 }
-.menu {
+.navigation {
+  font-family: "Montserrat", sans-serif;
   display: flex;
+  flex-direction: row;
+  background-color: #171718;
+  color: #edeff3;
+  height: auto;
+  justify-content: end;
+  align-items: center;
+  padding: 0 8%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
-.ref {
-  cursor: pointer;
+
+a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
 }
 
 ul {
   list-style: none;
 }
 
-.navigation li {
-  float: left;
-  padding: 10px 20px 20px 0;
+.nav_links {
+  display: inline-block;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.6s;
 }
 
-.navigation :hover {
-  color: aquamarine;
-  transition: width 2s, height 4s;
+.nav_links:hover {
+  color: rgb(120, 123, 121);
+}
+.ref {
+  text-decoration: solid;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-right: auto;
 }
 
 /* Introduction Section */
 
 #Introduction {
-  /* display: flex; */
   background-image: url("port.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -81,7 +101,7 @@ ul {
 .Intro-Name {
   font-size: 3rem;
   text-align: center;
-  margin-top: 10%;
+  padding-top: 10%;
 }
 .links ul {
   position: absolute;
@@ -122,14 +142,28 @@ ul {
 }
 
 @media (max-width: 700px) {
+  .navigation {
+    flex-direction: column;
+    justify-content: center;
+    position: static;
+  }
+
+  .nav_links {
+    font-size: 1rem;
+  }
+
+  a {
+    display: block;
+  }
+
+  .ref {
+    font-size: 2rem;
+    margin: 10px auto 0 auto;
+  }
+
   #Introduction {
     background-image: none;
     background-color: #181919;
-  }
-
-  header {
-    flex-direction: column;
-    justify-content: center;
   }
 
   nav,
@@ -139,7 +173,7 @@ ul {
   }
   .Intro-Name {
     font-size: 2rem;
-    margin: 5%auto;
+    margin: auto;
   }
   .menu {
     flex-direction: column;
@@ -366,4 +400,20 @@ ul {
   padding: 15px 0;
   font-family: "Montserrat", sans-serif;
   background-color: #181919;
+}
+
+.gotobtn {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  background: none;
+  bottom: 40px;
+  right: 50px;
+
+  border-radius: 10px;
+  border: 1px solid black;
+  text-decoration: none;
+  text-align: center;
+  color: #d2c2d3;
+  font-size: 1.2rem;
 }

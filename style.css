@@ -101,12 +101,12 @@ ul {
 .Intro-Name {
   font-size: 3rem;
   text-align: center;
-  padding-top: 10%;
+  padding-top: 20%;
 }
 .links ul {
   position: absolute;
   margin-top: 5%;
-  margin-left: 45%;
+  margin-left: 46%;
   transform: translate(-50%, -50%);
   display: flex;
 }

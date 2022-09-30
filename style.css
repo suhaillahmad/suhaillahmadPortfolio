@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
+  outline: none;
 }
 
 body {
@@ -105,7 +107,7 @@ ul {
   color: #1da1f2;
 }
 .links ul li:nth-child(3) .yo:hover {
-  color: #fb3958;
+  color: #0a66c2;
 }
 .links ul li:nth-child(4) .yo:hover {
   color: #fbbc05;
@@ -311,4 +313,57 @@ ul {
     width: 370px;
     margin: 5% auto;
   }
+}
+
+#footer {
+  background-image: url("footer.jpg");
+  background-size: cover;
+  font-size: 3rem;
+  padding-top: 5%;
+  margin-top: 5%;
+  text-align: center;
+  font-family: "Caveat", cursive;
+}
+#footer .About-Name {
+  color: #f2f2f2;
+}
+#footer .About-subtitle {
+  font-size: 1.5rem;
+  color: #d7d0d0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  padding: 5%;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.foo {
+  margin: 0 10px;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.foo:hover {
+  transform: translate(0, -10px);
+}
+.foo1:hover {
+  color: #fbbc05;
+}
+.foo2:hover {
+  color: #0a66c2;
+}
+.foo3:hover {
+  color: #1da1f2;
+}
+.foo4:hover {
+  color: #333;
+}
+.copy {
+  font-size: 1rem;
+  height: 60px;
+  padding: 15px 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #181919;
 }

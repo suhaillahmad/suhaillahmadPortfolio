@@ -8,7 +8,6 @@
 
 body {
   background-color: #f2f2f2;
-  margin: 0;
   text-align: center;
 }
 
@@ -28,7 +27,6 @@ li,
 a,
 button {
   font-family: "Oswald", sans-serif;
-  font-weight: 400;
   text-decoration: none;
 }
 
@@ -41,7 +39,6 @@ hr {
 .navigation {
   font-family: "Montserrat", sans-serif;
   display: flex;
-  flex-direction: row;
   background-color: #171718;
   color: #edeff3;
   height: auto;
@@ -89,7 +86,7 @@ ul {
 /* Introduction Section */
 
 #Introduction {
-  background-image: url("port.jpg");
+  background-image: url("Images/port.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -350,7 +347,7 @@ ul {
 }
 
 #footer {
-  background-image: url("footer.jpg");
+  background-image: url("Images/footer.jpg");
   background-size: cover;
   font-size: 3rem;
   padding-top: 5%;
